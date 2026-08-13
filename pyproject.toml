@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "litcompare"
+version = "0.1.0"
+description = "Compare two Project Gutenberg books with statistical analysis and charts."
+requires-python = ">=3.11"
+dependencies = [
+    "requests",
+    "nltk",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[project.scripts]
+litcompare = "litcompare.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["litcompare*"]

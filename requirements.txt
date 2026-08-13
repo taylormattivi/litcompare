@@ -1,0 +1,6 @@
+requests
+nltk
+scikit-learn
+matplotlib
+seaborn
+pytest
