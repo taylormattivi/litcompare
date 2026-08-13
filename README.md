@@ -19,7 +19,7 @@ report with embedded charts.
 ## Installation
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/taylormattivi/litcompare.git
 cd litcompare
 python3 -m venv venv
 source venv/bin/activate
